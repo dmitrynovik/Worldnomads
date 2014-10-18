@@ -1,0 +1,25 @@
+﻿@using System.Web.Mvc.Html;
+@using System.Linq;
+@model WorldNomads.Web.Models.SequencesModel
+
+<h2>Enter a number</h2>
+<h6>( Must be a positve integer. Large numbers might take time, so please be patient )</h6>
+
+@using (var form = Html.BeginForm())
+{
+    <input type="number" id="number" name="number" />
+    <button type="submit">Enumerate</button>
+}
+
+@if (this.Model != null)
+{
+    <h3>Results:</h3>
+    foreach (var seq in Model.Sequences)
+    {
+        var output = string.Join(", ", seq.ToArray());
+        <span>@output</span>
+        <hr />
+    }
+}
+
+
