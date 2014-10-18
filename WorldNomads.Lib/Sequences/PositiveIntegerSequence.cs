@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WorldNomads.Lib.Sequences
 {
-    public class PositiveIntegerSequence : PositiveSequence<int>
+    public class PositiveIntegerSequence : PositiveSequence
     {
         public override string DisplayName
         {

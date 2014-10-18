@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WorldNomads.Lib
 {
-    public abstract class PositiveSequence<TOut> : Sequence<int>
+    public abstract class PositiveSequence : Sequence<int>
     {
         public PositiveSequence(int bounds) : base(bounds)
         {

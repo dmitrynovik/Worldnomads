@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WorldNomads.Lib.Sequences
 {
-    public class MyWeirdDivisorSequence : PositiveSequence<object>
+    public class MyWeirdDivisorSequence : PositiveSequence
     {
         public MyWeirdDivisorSequence(int upperBounds) : base(upperBounds) {  }
 
