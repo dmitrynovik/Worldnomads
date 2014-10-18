@@ -5,11 +5,11 @@ namespace WorldNomads.Lib.Sequences
 {
     public class PositiveIntegerSequence: PositiveSequence<uint>
     {
-        public PositiveIntegerSequence(uint upperBound) : base(upperBound) { }
-
-        public override IEnumerable<uint> Enumerate()
+        public override IEnumerable<uint> EnumerateUntil(uint upperBound)
         {
-            for (uint i = 1; i <= UpperBound; ++i)
+            Validate(upperBound);
+
+            for (uint i = 1; i <= upperBound; ++i)
                 yield return i;
         }
     }

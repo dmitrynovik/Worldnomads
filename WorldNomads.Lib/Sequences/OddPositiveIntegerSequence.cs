@@ -6,11 +6,11 @@ namespace WorldNomads.Lib.Sequences
 {
     public class OddPositiveIntegerSequence : PositiveIntegerSequence
     {
-        public OddPositiveIntegerSequence(uint upperBound) : base(upperBound) {  }
-
-        public override IEnumerable<uint> Enumerate()
+        public override IEnumerable<uint> EnumerateUntil(uint upperBound)
         {
-            foreach (var n in base.Enumerate())
+            Validate(upperBound);
+
+            foreach (var n in base.EnumerateUntil(upperBound))
                 if (n % 2 == 1)
                     yield return n;
         }

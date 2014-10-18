@@ -5,16 +5,12 @@ namespace WorldNomads.Lib
 {
     public abstract class PositiveSequence<TOut> : ISequence<uint, TOut>
     {
-        public PositiveSequence(uint upperBound)
+        public abstract IEnumerable<TOut> EnumerateUntil(uint upperBound);
+
+        public void Validate(uint upperBound)
         {
-            if (upperBound <= 0) 
-                throw new ArgumentException("Must enter positive integer", "start");
-
-            UpperBound = upperBound;
+            if (upperBound <= 0)
+                throw new ArgumentException("The argument must be a positive whole number", "upperBound");
         }
-
-        public uint UpperBound { get; private set; }
-
-        public abstract IEnumerable<TOut> Enumerate();
     }
 }

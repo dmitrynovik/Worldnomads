@@ -17,7 +17,7 @@ namespace WorldNomads.Web.Controllers
         [HttpPost]
         public ActionResult EnumerateSequences(uint number)
         {
-            var generator = new PositiveSequenceReflector();
+            var generator = new PositiveSequenceFactory();
             var result = new SequencesModel( generator.EnumerateAll(number) );
             return View(result);
         }

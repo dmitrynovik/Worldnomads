@@ -5,11 +5,11 @@ namespace WorldNomads.Lib.Sequences
 {
     public class MyWeirdDivisorSequence : PositiveSequence<object>
     {
-        public MyWeirdDivisorSequence(uint upperBound) : base(upperBound) {  }
-
-        public override IEnumerable<object> Enumerate()
+        public override IEnumerable<object> EnumerateUntil(uint upperBound)
         {
-            for (var i = 1; i <= UpperBound; ++i)
+            Validate(upperBound);
+
+            for (var i = 1; i <= upperBound; ++i)
             {
                 if (i.IsMultipleOf(15))
                     yield return 'Z';
