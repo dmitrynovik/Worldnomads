@@ -37,7 +37,7 @@
   <ItemGroup>
     <Compile Include="NumberExtensions.cs" />
     <Compile Include="PositiveSequence.cs" />
-    <Compile Include="PositiveSequenceFactory.cs" />
+    <Compile Include="SequenceFactory.cs" />
     <Compile Include="Sequences\EvenPositiveIntegerSequence.cs" />
     <Compile Include="Sequences\Fibonacci.cs" />
     <Compile Include="Sequences\MyWeirdDivisorSequence.cs" />
