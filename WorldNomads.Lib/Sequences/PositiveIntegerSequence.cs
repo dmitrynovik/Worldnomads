@@ -7,7 +7,7 @@ namespace WorldNomads.Lib.Sequences
     {
         public override string DisplayName
         {
-            get { return @"Positive whole integers."; }
+            get { return @"Positive whole numbers."; }
         }
 
         public PositiveIntegerSequence(int upperBound) : base(upperBound)
