@@ -28,3 +28,13 @@ C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Mvc.xml
 C:\Projects\Worldnomads\Worldnomads\WorldNomads\obj\Debug\WorldNomads.Web.csprojResolveAssemblyReference.cache
 C:\Projects\Worldnomads\Worldnomads\WorldNomads\obj\Debug\WorldNomads.Web.dll
 C:\Projects\Worldnomads\Worldnomads\WorldNomads\obj\Debug\WorldNomads.Web.pdb
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Helpers.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Razor.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Webpages.Deployment.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Webpages.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Webpages.Razor.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Razor.xml
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Webpages.xml
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Webpages.Deployment.xml
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Webpages.Razor.xml
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Helpers.xml
