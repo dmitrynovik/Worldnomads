@@ -18,3 +18,13 @@ C:\Users\Dmitry\Documents\visual studio 2013\Projects\WorldNomads\WorldNomads\ob
 C:\Users\Dmitry\Documents\visual studio 2013\Projects\WorldNomads\WorldNomads\obj\Debug\WebApplication1.pdb
 C:\Users\Dmitry\Documents\visual studio 2013\Projects\WorldNomads\WorldNomads\bin\WorldNomads.Lib.dll
 C:\Users\Dmitry\Documents\visual studio 2013\Projects\WorldNomads\WorldNomads\bin\WorldNomads.Lib.pdb
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\WorldNomads.Web.dll.config
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\WorldNomads.Web.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\WorldNomads.Web.pdb
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Mvc.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\WorldNomads.Lib.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\WorldNomads.Lib.pdb
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\bin\System.Web.Mvc.xml
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\obj\Debug\WorldNomads.Web.csprojResolveAssemblyReference.cache
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\obj\Debug\WorldNomads.Web.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads\obj\Debug\WorldNomads.Web.pdb
