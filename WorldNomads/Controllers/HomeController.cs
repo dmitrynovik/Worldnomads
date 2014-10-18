@@ -16,7 +16,7 @@ namespace WorldNomads.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult EnumerateSequences(uint number)
+        public ActionResult EnumerateSequences(int number)
         {
             SequencesModel model;
             try

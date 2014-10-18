@@ -19,7 +19,7 @@ namespace WorldNomads.Test
         public void When_3_Output_Is_1_3()
         {
             var seq = new OddPositiveIntegerSequence(3);
-            Assert.IsTrue(seq.Results.Cast<uint>().SequenceEqual(new uint[] { 1, 3 }));
+            Assert.IsTrue(seq.Results.Cast<int>().SequenceEqual(new int[] { 1, 3 }));
         }
     }
 }

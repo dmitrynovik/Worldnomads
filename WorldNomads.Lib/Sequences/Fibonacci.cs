@@ -6,18 +6,18 @@ namespace WorldNomads.Lib.Sequences
 {
     public class Fibonacci : PositiveIntegerSequence
     {
-        public Fibonacci(uint upperBounds) : base(upperBounds) {  }
+        public Fibonacci(int upperBounds) : base(upperBounds) {  }
 
         public override string DisplayName
         {
             get { return "Fibonacci numbers"; }
         }
 
-        protected override IEnumerable<object> EnumerateUntil(uint upperBound)
+        protected override IEnumerable<object> EnumerateUntil(int upperBound)
         {
-            uint current = 1;
-            uint previous = 1;
-            var result = new List<uint>() { 1 }; // Fib(0)
+            int current = 1;
+            int previous = 1;
+            var result = new List<int>() { 1 }; // Fib(0)
 
             while (current <= upperBound)
             {

@@ -19,21 +19,21 @@ namespace WorldNomads.Test
         public void When_1_Output_Is_1_1()
         {
             var seq = new Fibonacci(1);
-            Assert.IsTrue(seq.Results.Cast<uint>().SequenceEqual(new uint[] { 1, 1 }));
+            Assert.IsTrue(seq.Results.Cast<int>().SequenceEqual(new int[] { 1, 1 }));
         }
 
         [Test]
         public void When_8_Output_Is_1_1_2_3_5_8()
         {
             var seq = new Fibonacci(8);
-            Assert.IsTrue(seq.Results.Cast<uint>().SequenceEqual(new uint[] { 1, 1, 2, 3, 5, 8 }));
+            Assert.IsTrue(seq.Results.Cast<int>().SequenceEqual(new int[] { 1, 1, 2, 3, 5, 8 }));
         }
 
         [Test]
         public void When_9_Output_Is_1_1_2_3_5_8()
         {
             var seq = new Fibonacci(9);
-            Assert.IsTrue(seq.Results.Cast<uint>().SequenceEqual(new uint[] { 1, 1, 2, 3, 5, 8 }));
+            Assert.IsTrue(seq.Results.Cast<int>().SequenceEqual(new int[] { 1, 1, 2, 3, 5, 8 }));
         }
     }
 }

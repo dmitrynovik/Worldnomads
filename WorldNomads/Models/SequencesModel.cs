@@ -9,7 +9,7 @@ namespace WorldNomads.Web.Models
 {
     public class SequencesModel
     {
-        public IEnumerable<Sequence<uint>> Sequences { get; set; }
+        public IEnumerable<Sequence<int>> Sequences { get; set; }
 
         public string Error { get; set; }
 
