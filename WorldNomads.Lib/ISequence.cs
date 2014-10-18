@@ -6,5 +6,7 @@ namespace WorldNomads.Lib
     public interface ISequence<TIn, TOut>
     {
         IEnumerable<TOut> EnumerateUntil(TIn upperBound);
+
+        string DisplayName { get; }
     }
 }

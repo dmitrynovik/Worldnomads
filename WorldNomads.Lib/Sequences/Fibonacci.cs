@@ -5,6 +5,11 @@ namespace WorldNomads.Lib.Sequences
 {
     public class Fibonacci : PositiveIntegerSequence
     {
+        public override string DisplayName
+        {
+            get { return "Fibonacci numbers"; }
+        }
+
         public override IEnumerable<uint> EnumerateUntil(uint upperBound)
         {
             Validate(upperBound);

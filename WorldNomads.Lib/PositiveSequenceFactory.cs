@@ -9,7 +9,7 @@ namespace WorldNomads.Lib
     public class PositiveSequenceFactory
     {
         //
-        // Note: Could potentially implement same functionality using 
+        // NOTE: Could potentially implement same functionality using 
         //  - Managed Extensibility Framework (MEF) instead
         // OR
         // -  IoC container

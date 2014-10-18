@@ -5,6 +5,11 @@ namespace WorldNomads.Lib.Sequences
 {
     public class EvenPositiveIntegerSequence : PositiveIntegerSequence
     {
+        public override string DisplayName
+        {
+            get { return "Even positive whole numbers"; }
+        }
+
         public override IEnumerable<uint> EnumerateUntil(uint upperBound)
         {
             Validate(upperBound);

@@ -7,6 +7,8 @@ namespace WorldNomads.Lib
     {
         public abstract IEnumerable<TOut> EnumerateUntil(uint upperBound);
 
+        public abstract string DisplayName { get; }
+
         public void Validate(uint upperBound)
         {
             if (upperBound <= 0)

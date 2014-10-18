@@ -6,6 +6,11 @@ namespace WorldNomads.Lib.Sequences
 {
     public class OddPositiveIntegerSequence : PositiveIntegerSequence
     {
+        public override string DisplayName
+        {
+            get { return "Odd positive whole numbers"; }
+        }
+
         public override IEnumerable<uint> EnumerateUntil(uint upperBound)
         {
             Validate(upperBound);
