@@ -7,3 +7,12 @@ C:\Users\Dmitry\Documents\Visual Studio 2013\Projects\WorldNomads\WorldNomads.Te
 C:\Users\Dmitry\Documents\Visual Studio 2013\Projects\WorldNomads\WorldNomads.Test\obj\Debug\WorldNomads.Test.csprojResolveAssemblyReference.cache
 C:\Users\Dmitry\Documents\Visual Studio 2013\Projects\WorldNomads\WorldNomads.Test\obj\Debug\WorldNomads.Test.dll
 C:\Users\Dmitry\Documents\Visual Studio 2013\Projects\WorldNomads\WorldNomads.Test\obj\Debug\WorldNomads.Test.pdb
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Test\bin\Debug\WorldNomads.Test.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Test\bin\Debug\WorldNomads.Test.pdb
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Test\bin\Debug\nunit.framework.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Test\bin\Debug\WorldNomads.Lib.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Test\bin\Debug\WorldNomads.Lib.pdb
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Test\bin\Debug\nunit.framework.xml
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Test\obj\Debug\WorldNomads.Test.csprojResolveAssemblyReference.cache
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Test\obj\Debug\WorldNomads.Test.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Test\obj\Debug\WorldNomads.Test.pdb

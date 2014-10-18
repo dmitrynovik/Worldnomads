@@ -2,3 +2,7 @@ C:\Users\Dmitry\Documents\Visual Studio 2013\Projects\WorldNomads\WorldNomads.Li
 C:\Users\Dmitry\Documents\Visual Studio 2013\Projects\WorldNomads\WorldNomads.Lib\bin\Debug\WorldNomads.Lib.pdb
 C:\Users\Dmitry\Documents\Visual Studio 2013\Projects\WorldNomads\WorldNomads.Lib\obj\Debug\WorldNomads.Lib.dll
 C:\Users\Dmitry\Documents\Visual Studio 2013\Projects\WorldNomads\WorldNomads.Lib\obj\Debug\WorldNomads.Lib.pdb
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Lib\bin\Debug\WorldNomads.Lib.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Lib\bin\Debug\WorldNomads.Lib.pdb
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Lib\obj\Debug\WorldNomads.Lib.dll
+C:\Projects\Worldnomads\Worldnomads\WorldNomads.Lib\obj\Debug\WorldNomads.Lib.pdb
