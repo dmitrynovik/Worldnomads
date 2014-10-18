@@ -3,17 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using WorldNomads.Lib;
 
 namespace WorldNomads.Web.Models
 {
     public class SequencesModel
     {
-        public SequencesModel(IEnumerable<IEnumerable<object>> input)
-        {
-            Sequences = input;
-        }
-
-        public IEnumerable<IEnumerable<object>> Sequences { get; set; }
+        public IEnumerable<Sequence<uint>> Sequences { get; set; }
 
         public string Error { get; set; }
 

@@ -14,11 +14,16 @@
 @if (this.Model != null)
 {
     <h3>Results</h3>
-    foreach (var seq in Model.Sequences)
+    @Html.ValidationSummary()
+    if (Model.Sequences != null)
     {
-        var output = string.Join(", ", seq.ToArray());
-        <span>@output</span>
-        <hr />
+        foreach (var seq in Model.Sequences)
+        {
+            var output = string.Join(", ", seq.Results.ToArray());
+            <h6>@seq.DisplayName</h6>
+            <span>@output</span>
+            <hr />
+        }
     }
 }
 

@@ -1,19 +1,20 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace WorldNomads.Lib.Sequences
 {
     public class Fibonacci : PositiveIntegerSequence
     {
+        public Fibonacci(uint upperBounds) : base(upperBounds) {  }
+
         public override string DisplayName
         {
             get { return "Fibonacci numbers"; }
         }
 
-        public override IEnumerable<uint> EnumerateUntil(uint upperBound)
+        protected override IEnumerable<object> EnumerateUntil(uint upperBound)
         {
-            Validate(upperBound);
-
             uint current = 1;
             uint previous = 1;
             var result = new List<uint>() { 1 }; // Fib(0)
@@ -26,7 +27,7 @@ namespace WorldNomads.Lib.Sequences
                 current = current + previous;
                 previous = tmp;
             }
-            return result;
+            return result.Cast<object>();
         }
     }
 }

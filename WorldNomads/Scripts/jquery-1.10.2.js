@@ -4824,7 +4824,7 @@ jQuery.event = {
 				handlers.delegateCount = 0;
 
 				// Only use addEventListener/attachEvent if the special events handler returns false
-				if ( !special.setup || special.setup.call( elem, data, namespaces, eventHandle ) === false ) {
+				if ( !special.seq || special.seq.call( elem, data, namespaces, eventHandle ) === false ) {
 					// Bind the global event handler to the element
 					if ( elem.addEventListener ) {
 						elem.addEventListener( type, eventHandle, false );
@@ -5483,7 +5483,7 @@ jQuery.each({
 if ( !jQuery.support.submitBubbles ) {
 
 	jQuery.event.special.submit = {
-		setup: function() {
+		seq: function() {
 			// Only need this for delegated form submit events
 			if ( jQuery.nodeName( this, "form" ) ) {
 				return false;
@@ -5531,7 +5531,7 @@ if ( !jQuery.support.changeBubbles ) {
 
 	jQuery.event.special.change = {
 
-		setup: function() {
+		seq: function() {
 
 			if ( rformElems.test( this.nodeName ) ) {
 				// IE doesn't fire change on a check/radio until blur; trigger it on click
@@ -5596,7 +5596,7 @@ if ( !jQuery.support.focusinBubbles ) {
 			};
 
 		jQuery.event.special[ fix ] = {
-			setup: function() {
+			seq: function() {
 				if ( attaches++ === 0 ) {
 					document.addEventListener( orig, handler, true );
 				}

@@ -3,16 +3,12 @@ using System.Collections.Generic;
 
 namespace WorldNomads.Lib
 {
-    public abstract class PositiveSequence<TOut> : ISequence<uint, TOut>
+    public abstract class PositiveSequence<TOut> : Sequence<uint>
     {
-        public abstract IEnumerable<TOut> EnumerateUntil(uint upperBound);
-
-        public abstract string DisplayName { get; }
-
-        public void Validate(uint upperBound)
+        public PositiveSequence(uint bounds) : base(bounds)
         {
-            if (upperBound <= 0)
-                throw new ArgumentException("The argument must be a positive whole number", "upperBound");
+            if (bounds <= 0)
+                throw new ArgumentException("Please entter positive whole number");
         }
     }
 }

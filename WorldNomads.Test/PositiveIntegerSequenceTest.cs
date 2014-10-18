@@ -12,16 +12,14 @@ namespace WorldNomads.Test
         [ExpectedException(typeof(ArgumentException))]
         public void  When_0_Error()
         {
-            var sequence = new PositiveIntegerSequence();
-            Console.WriteLine(sequence.EnumerateUntil(0).ToArray());
+            var sequence = new PositiveIntegerSequence(0);
         }
 
         [Test]
         public void When_3_Output_Is_1_2_3()
         {
-            var setup = new PositiveIntegerSequence();
-            var result = setup.EnumerateUntil(3);
-            Assert.IsTrue(result.SequenceEqual(new uint[] { 1, 2, 3 }));
+            var seq = new PositiveIntegerSequence(3);
+            Assert.IsTrue(seq.Results.Cast<uint>().SequenceEqual(new uint[] { 1, 2, 3 }));
         }
     }
 }

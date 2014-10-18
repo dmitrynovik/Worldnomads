@@ -1,22 +1,23 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace WorldNomads.Lib.Sequences
 {
     public class EvenPositiveIntegerSequence : PositiveIntegerSequence
     {
+        public EvenPositiveIntegerSequence(uint upperBounds) : base(upperBounds) { }
+
         public override string DisplayName
         {
             get { return "Even positive whole numbers"; }
         }
 
-        public override IEnumerable<uint> EnumerateUntil(uint upperBound)
+        protected override IEnumerable<object> EnumerateUntil(uint upperBound)
         {
-            Validate(upperBound);
-
-            foreach (var n in base.EnumerateUntil(upperBound))
-                if (n % 2 == 0)
-                    yield return n;
+            for (uint i = 1; i <= _upperBound; ++i)
+                if (i % 2 == 0)
+                    yield return i;
         }
     }
 }

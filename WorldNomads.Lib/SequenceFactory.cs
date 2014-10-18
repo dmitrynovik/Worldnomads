@@ -14,27 +14,22 @@ namespace WorldNomads.Lib
         // OR
         // -  IoC container
         // 
-        static IEnumerable<object> _sequences;
+        static IEnumerable<Type> _sequenceTypes;
 
         static SequenceFactory()
         {
             // Reflect types implementing PositiveSequence<uint>:
-            _sequences = Assembly.GetExecutingAssembly().GetTypes()
-                .Where(t => IsSequence(t))
-                .Select(Activator.CreateInstance);
+            _sequenceTypes = Assembly.GetExecutingAssembly().GetTypes().Where(IsSequence);
         }
 
         private static bool IsSequence(Type t)
         {
-            return !t.IsAbstract && t.IsClass && 
-                (typeof(PositiveSequence<uint>).IsAssignableFrom(t) || typeof(PositiveSequence<object>).IsAssignableFrom(t));
+            return !t.IsAbstract && t.IsClass && typeof(Sequence<uint>).IsAssignableFrom(t);
         }
 
-        public IEnumerable<IEnumerable<object>> EnumerateAll(uint upperBound)
+        public IEnumerable<Sequence<uint>> EnumerateAll(uint upperBound)
         {
-            return _sequences.Select(seq => ((IEnumerable)seq.GetType().GetMethod("EnumerateUntil")
-                    .Invoke(seq, new object[] { upperBound }))
-                    .Cast<object>());
+            return _sequenceTypes.Select(t => (Sequence<uint>)Activator.CreateInstance(t, upperBound)).ToArray();
         }
     }
 }

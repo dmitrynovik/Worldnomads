@@ -43,7 +43,7 @@
     <Compile Include="Sequences\MyWeirdDivisorSequence.cs" />
     <Compile Include="Sequences\OddPositiveIntegerSequence.cs" />
     <Compile Include="Sequences\PositiveIntegerSequence.cs" />
-    <Compile Include="ISequence.cs" />
+    <Compile Include="Sequence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Web;
 using System.Web.Mvc;
@@ -17,9 +18,27 @@ namespace WorldNomads.Web.Controllers
         [HttpPost]
         public ActionResult EnumerateSequences(uint number)
         {
-            var generator = new SequenceFactory();
-            var result = new SequencesModel( generator.EnumerateAll(number) );
-            return View(result);
+            SequencesModel model;
+            try
+            {
+                var generator = new SequenceFactory();
+                model = new SequencesModel() { Sequences = generator.EnumerateAll(number) };
+            }
+            catch (Exception ex)
+            {
+                model = new SequencesModel() { Error = GetErrorMessage(ex) };
+                ModelState.AddModelError("Sequences", model.Error);
+            }
+            return View(model);
+        }
+
+        private static string GetErrorMessage(Exception ex)
+        {
+            var pError = ex;
+            while (pError.InnerException != null)
+                pError = pError.InnerException;
+
+            return pError.Message;
         }
 
         public ActionResult Index()
