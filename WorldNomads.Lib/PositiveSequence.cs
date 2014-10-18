@@ -8,7 +8,7 @@ namespace WorldNomads.Lib
         public PositiveSequence(int bounds) : base(bounds)
         {
             if (bounds <= 0)
-                throw new ArgumentException("Please entter positive whole number");
+                throw new ArgumentException("Please enter positive whole number");
         }
     }
 }

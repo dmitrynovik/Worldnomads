@@ -1,0 +1,2 @@
+- The software requires .NET Framework 4.5 and Windows operating system (not tested on Linux / Mono)
+- The UI is self-explanatory and convenient to use.
